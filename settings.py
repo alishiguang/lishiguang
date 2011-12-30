@@ -51,7 +51,7 @@ MEDIA_URL = ''
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
 ADMIN_MEDIA_PREFIX = '/media/'
-
+STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'media')
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'qd2$^eaa4331&fdhj0x9c8wr#7$w*9#p37-*u9!_vmah85pmb%'
 

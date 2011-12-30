@@ -16,5 +16,8 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
+    #后台管理
     (r'^admin/', include(admin.site.urls)),
+    #首页
+    (r'^index/','cms.views.index'),
 )
