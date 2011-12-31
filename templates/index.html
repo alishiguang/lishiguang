@@ -10,18 +10,22 @@
 
         <div>
             <b class="b1"></b><b class="b2 d1"></b><b class="b3 d1"></b><b class="b4 d1"></b>
+
             <div class="b d1 k">
 
                 <p>Headline : {{ article.headline }}</p>
-                <p>Article : {{ article.article|safe }}</p>
-                <p>By {{ article.reporter.full_name }}</p>
-                <p>Published {{ article.pub_date|date:"F j, Y" }}</p>
-                <br />
 
+                <p>Article : {{ article.article|safe|truncatewords_html:"10" }}</p>
+
+                <p>By {{ article.reporter.full_name }}</p>
+
+                <p>Published {{ article.pub_date|date:"F j, Y" }}</p>
+                <br/>
+                <a href="#">more</a>
             </div>
             <b class="b4b d1"></b><b class="b3b d1"></b><b class="b2b d1"></b><b class="b1b"></b>
         </div>
-        <br />
+        <br/>
     {% endfor %}
 
     {% if articlelist.has_previous %}
@@ -29,9 +33,9 @@
     {% endif %}
     {% for p in page_range %}
         {% ifequal p articlelist.number %}
-            <span>{{p}}</span>
+            <span>{{ p }}</span>
         {% else %}
-            <a href="?page={{p}}" title="第{{p}}页">{{p}}</a>
+            <a href="?page={{p}}" title="第{{p}}页">{{ p }}</a>
         {% endifequal %}
     {% endfor %}
     &nbsp;
