@@ -3,15 +3,27 @@
 {% block title %}Alishiguang{% endblock %}
 
 {% block content %}
-    <h1>Articles</h1>
+
+    <h1></h1>
 
     {% for article in articlelist.object_list %}
-        <p>Headline : {{ article.headline }}</p>
-        <p>Article : {{ article.article|safe }}</p>
-        <p>By {{ article.reporter.full_name }}</p>
-        <p>Published {{ article.pub_date|date:"F j, Y" }}</p>
+
+        <div>
+            <b class="b1"></b><b class="b2 d1"></b><b class="b3 d1"></b><b class="b4 d1"></b>
+            <div class="b d1 k">
+
+                <p>Headline : {{ article.headline }}</p>
+                <p>Article : {{ article.article|safe }}</p>
+                <p>By {{ article.reporter.full_name }}</p>
+                <p>Published {{ article.pub_date|date:"F j, Y" }}</p>
+                <br />
+
+            </div>
+            <b class="b4b d1"></b><b class="b3b d1"></b><b class="b2b d1"></b><b class="b1b"></b>
+        </div>
         <br />
     {% endfor %}
+
     {% if articlelist.has_previous %}
         <a href="?page={{ articlelist.previous_page_number }}" title="下一页">上一页</a>&nbsp;
     {% endif %}
@@ -33,4 +45,6 @@
     {% else %}
         <p>Welcome, new user. Please log in.</p>
     {% endif %}
+
+
 {% endblock %}

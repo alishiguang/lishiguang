@@ -59,7 +59,7 @@ SECRET_KEY = 'qd2$^eaa4331&fdhj0x9c8wr#7$w*9#p37-*u9!_vmah85pmb%'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
-     'django.template.loaders.eggs.load_template_source',
+    'django.template.loaders.eggs.load_template_source',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -73,6 +73,7 @@ ROOT_URLCONF = 'lishiguang.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), 'media'),
     )
 
 INSTALLED_APPS = (

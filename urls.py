@@ -19,5 +19,5 @@ urlpatterns = patterns('',
     #后台管理
     (r'^admin/', include(admin.site.urls)),
     #首页
-    (r'^index/','cms.views.index'),
+    (r'^$','cms.views.index'),
 )

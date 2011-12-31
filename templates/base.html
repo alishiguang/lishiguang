@@ -3,12 +3,12 @@
     <title>{% block title %}{% endblock %}</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="/site_media/css/style.css"/>
+    <link id="globalheader-stylesheet" type="text/css" href="http://images.apple.com/global/nav/styles/navigation.css" rel="stylesheet">
 </head>
 <body>
+<hr>
 <div id="wrapper">
-
     <div id="content">
-
         <nav>
             <ul id="appleNav">
                 <li><a href="#" title="Alishiguang">Alishiguang</a></li>
@@ -26,7 +26,6 @@
                 </li>
             </ul>
         </nav>
-
         {% block content %}{% endblock %}
         <nav>
             <ul id="appleNav">

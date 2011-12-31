@@ -1,3 +1,5 @@
+
+
 /* BASIC RESET */
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
 
@@ -9,7 +11,7 @@ h1 small{ font-size: 24px; display: block; color: #636363; }
 .break { clear:both; }
 
 /* WRAPPER */
-#wrapper { width:980px; margin:40px auto; }
+#wrapper { width:980px; margin:40px auto;}
 
 /* CONTENT */
 #content { margin-top:50px; }
@@ -126,3 +128,12 @@ We also remove the borders, since they don't need them. */
 #appleNav {
      -webkit-animation: showMenu 1s; position:relative;
 }
+
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid #999;border-right:1px solid #999;}
+.b1,.b1b{margin:0 5px;background:#999;}
+.b2,.b2b{margin:0 3px;border-width:2px;}
+.b3,.b3b{margin:0 2px;}
+.b4,.b4b{height:2px;margin:0 1px;}
+.d1{background:#F7F8F9;}
