@@ -21,6 +21,7 @@ class Article(models.Model):
     文章
     """
     catagory=models.ForeignKey(Catagory,verbose_name='类目')
+    pic = models.ImageField('图片',upload_to='uploadImages')
     headline=models.CharField("标题",max_length=200)
     article=models.TextField("文章")
     pub_date=models.DateTimeField("发布日期")
