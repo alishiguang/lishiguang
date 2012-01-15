@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     #富文本框
-    (r'^site_media/(?P<path>.*)$','django.views.static.serve',{'document_root': 'media'}),
+    (r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root': 'media'}),
     # Example:
     # (r'^lishiguang/', include('lishiguang.foo.urls')),
 
@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     #首页
     (r'^$','cms.views.index'),
+    (r'^welcome$','cms.views.welcome'),
 )

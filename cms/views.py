@@ -7,6 +7,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 
+def welcome(request):
+    return render_to_response("welcome9.0.html",locals())
+
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)

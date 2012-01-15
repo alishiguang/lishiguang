@@ -13,7 +13,7 @@ class ArticleAdmin(admin.ModelAdmin):
     ordering = ('-pub_date',)
 
     class Media:
-        js = ('/site_media/js/tiny_mce/tiny_mce.js', '/site_media/js/textareas.js')
+        js = ('/static/js/tiny_mce/tiny_mce.js', '/static/js/textareas.js')
 
 admin.site.register(Catagory)
 admin.site.register(Article, ArticleAdmin)

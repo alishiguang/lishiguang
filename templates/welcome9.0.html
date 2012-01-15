@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<meta name="title" content="欢迎使用 Firefox 火狐浏览器" />
+	<meta name="description" content="火狐浏览器欢迎页"/>
+	<meta name="keywords" content="火狐浏览器, 浏览器, 火狐中国版, Firefox, Mozilla, 欢迎页"/>
+	
+	<title>欢迎使用火狐浏览器</title>
+
+	<link rel="stylesheet" href="/static/style/base.css?v=53116" type="text/css"/>
+	<link rel="stylesheet" href="/static/style/welcome-ff8.css?v=55e53" type="text/css" media="screen" />
+	
+    <script type="text/javascript" src="/static/js/jquery-1.4.2.min.js?v=e055c"></script>
+    <script type="text/javascript" src="/static/js/platform.js?v=29181"></script>
+
+<!--	<script type="text/javascript">
+        var ua = navigator.userAgent.toLowerCase(); 
+        var s = ua.match(/firefox\/([\d.]+)/);
+        if(s) {
+            version = s[1];
+            var v_arr = version.split('.', 2);
+            if (v_arr.length == 2) {
+                version = v_arr[0] + ".0";
+                if(v_arr[0] != 9) window.location.href = "http://www.firefox.com.cn/welcome" + version + "/";
+            }
+        } 
+    </script>-->
+	
+</head>
+
+<body id="tour">
+
+<div id="wrapper">
+	<div id="doc">
+		<a id="weibo" title="了解更多火狐动态，欢迎到新浪微博关注@火狐" href="http://t.sina.com.cn/firefox" target="_blank"></a>
+		<div id="main-feature">
+			<h2>
+				欢迎使用Firefox<em>9</em>火狐浏览器
+			</h2>
+			<p>不断增强的速度和性能、更强的安全防护、全新的界面与特性...... </p><p>从这里开始，跟我们一起领略Firefox的神奇上网体验吧！</p>
+		</div>
+		
+		<div id="new-feature" class="feature-details">
+			<h2>大幅提升的性能！</h2>
+			
+			<div>
+				<p>最新版的 Firefox 在性能上有非常显著的提升，大幅降低的内存占用和更快的渲染速度，给用户更为流畅和高速的上网浏览体验，同时也让开发者能够开发出更为快速的网络应用和网站。</p>
+				<ul>
+					<li>新增类型推断：Firefox 9 新增了类型推断（Type Inference），再次大幅提高了JavaScript引擎的渲染速度，使得很多富含图片、视频、游戏以及3D图片的富网站和网络应用能够更快的加载和运行。最新版 Firefox 在速度上提升了30%！</li>
+					<li>优化内存使用：减少内存使用并且提升性能，包括响应、启动和页面加载时间，即使是运行在复杂的网站和网络应用中。</li>
+					<li>改善内存管理：JavaScript 垃圾回收站提升了工作频率来释放内存，并且改善了打开多标签时或 Firefox 长时间工作时的性能。</li>
+					<li>支持新的硬件加速技术：Azure Direct2D for Canvas，帮助 Firefox 加速基于画布的 HTML5 动画渲染。</li>
+					<li>支持 W3C navigation timing spec API：让开发者能够去衡量页面加载时间和网站导航，以便于他们可以确定如何提升网站的性能。</li>		
+					<li>性能报告扩展 Telemetry：用户可以选择加入报告浏览器的性能数据，从而帮助我们更好地改善 Firefox 的性能。</li>
+				</ul>
+			</div>
+			
+			<div class="feature-spotlight-footer"></div>
+		</div>
+		
+		<div class="feature-details">
+
+			<h2>特性聚焦</h2>
+			
+			<div class="feature-spotlight" id="spotlight-mac-osx-lion">
+				<h3><span class="title">增强支持 Mac OSX Lion</span></h3>
+				<p>Mac版火狐采用了新的界面，与 Mac OS X Lion 界面主题更统一，并支持两指重击导航手势</p>
+			</div>
+			
+			<div class="feature-spotlight" id="spotlight-do-not-preload">
+				<h3><span class="title">按需要恢复标签页</span></h3>
+				<p>在恢复上次浏览的标签页时，用户可以只选择部分标签页进行加载，从而提高启动速度。</p>
+			</div>
+			
+			<!--<div class="feature-spotlight" id="spotlight-tab-animation">
+				<h3><span class="title">标签页动画效果</span></h3>
+				<p>Firefox让用户可以更加方便的重新排列及拖拽标签，并且让这些操作具有一定的动画效果。</p>
+			</div>-->
+			
+			<div class="feature-spotlight" id="spotlight-control-of-addon">
+				<h3><span class="title">增强的扩展控制</span></h3>
+				<p>用户将会收到一个一次性的提示来审视和确认那些他们希望保留、禁用或是删除的第三方扩展。</p>
+			</div>
+			
+			<div class="feature-spotlight" id="spotlight-highlight-awesomebar">
+				<h3><span class="title">地址栏高亮域名</span></h3>
+				<p>地址栏中显示的地址，高亮其网站的域名，方便用户识别，从而更好的防止伪装地址等钓鱼网站产生的安全隐患。</p>
+			</div>
+
+			
+			<div class="feature-spotlight" id="spotlight-plugin-check-updates">
+				<h3><span class="title">内置插件更新检查</span></h3>
+				<p>附加组件管理器的插件中，内置了插件更新检查。通过“检查看看您的插件是否都是最新的”入口，可以直接进入到插件更新检测页，进行插件更新检查，确保及时更新插件版本。</p>
+			</div>
+
+			<div class="feature-spotlight" id="spotlight-ondemand-panorama">
+				<h3><span class="title">优化标签组</span></h3>
+				<p>提供标签组（Panorama）功能的基础上，启动时只加载当前活跃的标签组中的标签页，从而为使用标签组的用户提供更快的启动速度、并减少内存占用。</p>
+			</div>
+			
+			<div class="feature-spotlight" id="spotlight-do-not-track-me">
+				<h3><span class="title">请勿跟踪</span></h3>
+				<p>“请勿跟踪”功能能够使用户对火狐浏览器进行设置，基于他们的行为反馈来通知网站和广告商他们不想自己的浏览行为和偏爱设置被传递到网站和第三方广告服务器。您可用通过是否勾选“选项” - “隐私”中的“告诉网站我不希望被追踪”进行设置。</p>
+			</div>
+		
+			<div class="feature-spotlight" id="spotlight-sync">
+				<h3><span class="title">内置同步</span></h3>
+				<p>功能强大的 Sync（同步）内置到 Firefox 里了！在桌面电脑、笔记本、手机等多种终端设备中，方便的同步您的设置、密码、书签、历史记录、打开的标签页以及其它自定制信息。并在传输数据前进行了加密，确保同步更加安全。</p>
+			</div>
+			
+			<div class="feature-spotlight" id="spotlight-addons">
+				<h3><span class="title">扩展管理器</span></h3>
+				<p>在新版 Firefox 中，我们提供了全新的扩展管理器，更容易的管理火狐扩展，更容易寻找和安全新扩展。扩展管理器从原来的对话框转移到了新的标签页，更大的操作范围和更加便捷、易用的操作方式，让您可以更方便的使用扩展。</p>
+			</div>
+
+			<div class="feature-spotlight-footer"></div>
+
+		</div>
+		
+		
+		<div id="features-pager" class="pager pager-with-tabs">
+			<div id="features-pager-header">
+				<h3>全新的外观</h3>
+				<p>自 Firefox 4 以来，Firefox 的外观在所有支持的平台（Windows、Mac OS X、Linux/BSD）上都作出了重大的改变，全新的用户界面，让操作更加平滑、简单。</p>
+				<ul id="features-pager-nav" class="pager-tabs">
+					<li class="selected"><a id="feature-tab-location">新的标签位置</a></li>
+					<li><a id="feature-switch">切换标签页</a></li>
+					<li><a id="feature-app-tabs">应用标签</a></li>
+					<li class="windows-only" style="display: none;"><a id="feature-firefox-button">“Firefox”按钮</a></li>
+				</ul>
+			</div>
+
+			<div class="pager-content">
+				<div id="feature-tab-location-content">
+					<p>标签显示在顶部 —— 如果您在Windows上最大化火狐窗口的话，标签栏还会和窗口标题栏合二为一，从而使网页拥有更大的显示区域。同时改进了图标和圆角等效果，并支持Windows 7和Vista系统的透明玻璃效果。</p>
+
+					<script>// <![CDATA[
+						if (gPlatform == PLATFORM_MACOSX) {
+							document.write('<img src="/static/images/4/screen-tab-location-mac-cn.png" alt="New Tab Location screenshot" />');
+						} else if (gPlatform == PLATFORM_LINUX) {
+							document.write('<img src="/static/images/4/screen-tab-location-linux.png" alt="New Tab Location screenshot" />');
+						} else {
+							document.write('<img src="/static/images/4/screen-tab-location.png" alt="New Tab Location screenshot" />');
+						}
+					// ]]></script>
+					<noscript><img src="/static/images/4/screen-tab-location.png" alt="New Tab Location screenshot" /></noscript>
+				</div>
+
+				<div id="feature-switch-content" style="display: none;">
+					<p>通过地址栏，可以更加方便的直接切换到当前打开的其它标签页。如果你经常同时打开几十个标签页，那一定会喜欢这个功能，不需要再在标签栏中来回查找，地址栏里就可以直接定位、切换。</p>
+
+					<script>// <![CDATA[
+						if (gPlatform == PLATFORM_MACOSX) {
+							document.write('<img src="/static/images/4/screen-switch-to-tab-mac-cn.png" alt="Switch to Tab screenshot" />');
+						} else if (gPlatform == PLATFORM_LINUX) {
+							document.write('<img src="/static/images/4/screen-switch-to-tab-linux.png" alt="Switch to Tab screenshot" />');
+						} else {
+							document.write('<img src="/static/images/4/screen-switch-to-tab.png" alt="Switch to Tab screenshot" />');
+						}
+					// ]]></script>
+					<noscript><img src="/static/images/4/screen-switch-to-tab.png" alt="Switch to Tab screenshot" /></noscript>
+				</div>
+
+				<div id="feature-firefox-button-content" style="display: none;">
+					<p>全新的Firefox按钮，所有菜单项都集中到一个按钮中，一键访问。在我们原创的设计公开之后不久，Opera、Chrome等先后采用了这种方式，他们比我们先发布，并得到了几乎所有人的满意，我们也可以在所有浏览器中得到更好的体验。</p>
+
+					<script>// <![CDATA[
+						if (gPlatform == PLATFORM_MACOSX) {
+							document.write('<img src="/static/images/4/screen-firefox-button-mac.png" alt="Firefox Button screenshot" />');
+						} else {
+							document.write('<img src="/static/images/4/screen-firefox-button.png" alt="Firefox Button screenshot" />');
+						}
+					// ]]></script>
+					<noscript><img src="/static/images/4/screen-firefox-button.png" alt="Firefox Button screenshot" /></noscript>
+				</div>
+
+				<div id="feature-app-tabs-content" style="display: none;">
+					<p>将您经常访问的网站（比如邮件、微博、人人、开心等）通过右键点击标签页，将其固定在标签栏的左侧。从而使它们只占用非常小的空间，同时，如果那个应用中内容有了变化的话，还会自动通知您。</p>
+					<script>// <![CDATA[
+						if (gPlatform == PLATFORM_MACOSX) {
+							document.write('<img src="/static/images/4/screen-apps-tab-mac-cn.png" alt="Firefox App Tabs screenshot" />');
+						} else if (gPlatform == PLATFORM_LINUX) {
+							document.write('<img src="/static/images/4/screen-apps-tab-linux.png" alt="Firefox App Tabs screenshot" />');
+						} else {
+							document.write('<img src="/static/images/4/screen-apps-tab.png" alt="Firefox App Tabs screenshot" />');
+						}
+					// ]]></script>
+					<noscript><img src="/static/images/4/screen-apps-tab.png" alt="Firefox App Tabs screenshot" /></noscript>
+				</div>
+			</div>
+			<div id="features-pager-footer"></div>
+
+		</div>
+
+		
+		<div id="feature-boxes">
+			<div class="feature-box">
+				<h3>与我们保持联系</h3>
+				<a href="http://mozilla.com.cn" class="external">加入一起火狐社区</a><br />
+				<a href="http://t.sina.com.cn/firefox" class="external">来新浪微博关注我们</a><br />
+				<a href="http://www.renren.com/profile.do?portal=profileFriendlist&amp;id=311745290" class="external">到人人网关注我们</a><br />
+				<a href="http://www.kaixin001.com/home/?uid=70820332" class="external">到开心网关注我们</a>
+			</div>
+
+			<div class="feature-box">
+				<h3>更多Firefox相关信息</h3>
+				<a href="/features/" class="external">Firefox全部特性</a><br />
+				<a href="http://mozilla.com.cn/foxletter/" class="external">订阅火狐新闻快讯</a><br />
+				<a href="/download/recommendation/" class="external">火狐安全软件推荐</a><br />
+				<a href="http://firefox001.taobao.com/" class="external">火狐官方商店</a><br />
+				<a href="/about/whatismozilla/" class="external">Mozilla是谁？</a>
+			</div>
+			
+			<div class="feature-box" id="search-feature-box">
+				<h3>需要帮助？</h3>
+				<p>使用火狐遇到的问题，来<a href="http://mozilla.com.cn/qa/" class="external">用户问答</a></p>
+				<p>开发相关的问题，来<a href="http://mozilla.com.cn/qa/" class="external">开发者问答</a></p>
+				<form action="http://support.mozilla.com/search.php" id="support-form">
+					<div class="search-box">
+						<input type="hidden" name="where" value="all" />
+						<input type="hidden" name="locale" value="en-US" />
+						<input id="fsearch-new" name="q" type="text" value="" placeholder="Search Firefox Help">
+						<input type="image" src="/static/images/tour/search-button.png" id="support-submit" alt="Search">
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</div></div>
+
+<div id="copyright">
+	<p>Copyright &copy; 2011 Mozilla Online. 北京谋智网络技术有限公司 版权所有.</p>
+	<p><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备08003710号</a></p>
+</div>
+
+<script type="text/javascript" src="/static/js/yahoo-dom-event.js?v=293d6"></script>
+<script type="text/javascript" src="/static/js/animation-min.js?v=a18ba"></script>
+<script type="text/javascript" src="/static/js/container-min.js?v=517a6"></script>
+<script type="text/javascript" src="/static/js/mozilla-input-placeholder.js?v=92c7d"></script>
+
+<script type="text/javascript">
+	$(function(){
+		if (gPlatform == 1) {
+			$(".windows-only").css("display", "block");
+		}
+	});
+	$("#features-pager-nav li").hover(function(){
+		var $content = $("#" + $(this).children("a").attr("id") + "-content");
+		$(this).addClass('selected').siblings().removeClass('selected');
+		$(".pager-content > div").css("display", "none");
+		$content.css("display", "block");
+	});
+</script>
+
+<!--  Google Analytics Code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2826582-6']);
+  _gaq.push(['_addOrganic', 'baidu', 'word']);
+  _gaq.push(['_addOrganic', 'soso', 'w']);
+  _gaq.push(['_addOrganic', 'yodao', 'q']);
+  _gaq.push(['_addOrganic', 'sogou', 'query']);
+  
+  _gaq.push(['_setDomainName', '.firefox.com.cn']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+
+</html>
